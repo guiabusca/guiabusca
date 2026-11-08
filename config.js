@@ -1,16 +1,16 @@
 // Configuração provisória do guia. Troque Firebase/GitHub antes do lançamento.
 export const firebaseConfig = {
-  apiKey: "AIzaSyCanlMwdfud9gmVt62nJYYet4K2-BfWEc",
-  authDomain: "luary-system.firebaseapp.com",
-  projectId: "luary-system",
-  storageBucket: "luary-system.firebasestorage.app",
-  messagingSenderId: "996287172742",
-  appId: "1:996287172742:web:4ff8c22a01cabe4015c107"
+  apiKey: "AIzaSyCAiTnEr1KoZBKic0zcK1_0hbU52O8EoOA",
+  authDomain: "guia-busca-6bb88.firebaseapp.com",
+  projectId: "guia-busca-6bb88",
+  storageBucket: "guia-busca-6bb88.firebasestorage.app",
+  messagingSenderId: "193885803395",
+  appId: "1:193885803395:web:e2a3788eaa40d5024b5cb6"
 };
 
-// Temporário para testes: o painel abre sem login enquanto false.
+// Painel exige login (Firebase Authentication).
 // Altere para true antes de publicar o painel em produção.
-export const ADMIN_AUTH_REQUIRED = false;
+export const ADMIN_AUTH_REQUIRED = true;
 
 // Marca e cidade. Para abrir outra cidade ou outro segmento (ex.: Guia Busca Hotéis),
 // copie o projeto e troque apenas este bloco, os dados e as categorias.
@@ -20,7 +20,7 @@ export const BRAND = {
   city: "Iracemápolis",
   uf: "SP",
   segmento: "Cidade",                      // "Cidade", "Hotéis"... aparece no rodapé e nos textos de compartilhamento
-  siteUrl: "https://guiabusca.com.br",     // troque pelo endereço real (usado em compartilhamento e Google)
+  siteUrl: "https://guiabusca.github.io/guiabusca",     // troque pelo endereço real (usado em compartilhamento e Google)
   whatsapp: "",                            // WhatsApp do próprio guia, só números com DDD (ex.: 5519999999999). Vazio = botão some
   email: "",                               // e-mail de contato do guia (aparece como alternativa ao WhatsApp para "Informar erro ou remover")
   whatsappMessage: "Olá! Vi sua empresa no Guia Busca e gostaria de mais informações.",
@@ -215,7 +215,7 @@ export const COLECOES = {
 };
 
 export const IMAGE_BASE = "images/";
-export const GITHUB = { user: "luaryshop", repo: "ira-shopping", branch: "main", pasta: "images" };
+export const GITHUB = { user: "guiabusca", repo: "guiabusca", branch: "main", pasta: "images" };
 export const PRECOS = Object.fromEntries(Object.entries(PLANOS).map(([id, plano]) => [id, plano.price]));
 
 // ---------------------------------------------------------------------------
